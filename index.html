@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>소주 몇 병?</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./css/pretendard/pretendard.css" />
+        <link rel="stylesheet" href="./css/init.css" />
+        <link rel="stylesheet" href="./css/font.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+
+    <body>
+
+        <section>
+            <div class="result" id="result">
+                <div id="situation"></div>
+                <table>
+                    <tr>
+                        <td>가격</td>
+                        <td id="rsCost"></td>
+                    </tr>
+                    <tr>
+                        <td>체내 흡수되는 알코올의 질량</td>
+                        <td id="rsAlchol"></td>
+                    </tr>
+
+                    <tr>
+                        <td>혈중 알코올농도 최고치</td>
+                        <td id="rsAlcholBlood"></td>
+                    </tr>
+
+                    <tr>
+                        <td>혈중 알코올농도 감소량</td>
+                        <td id="rsAlcholBloodDc"></td>
+                    </tr>
+
+                    <tr>
+                        <td>최종 알코올농도</td>
+                        <td id="rsAlcholBloodTotal"></td>
+                    </tr>
+
+                    <tr class="death">
+                        <td>위험</td>
+                        <td id="rsDeath"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="info">
+                <flex-y class="section">
+                    <div>신체 정보</div>
+                    <flex-y>
+                        <flex-x>
+
+                            <inputField>
+                                <div>
+                                    <input type="radio" name="gender" id="male" checked />
+                                    <label for="male">남성</label>
+                                </div>
+        
+                                <div>
+                                    <input type="radio" name="gender" id="female" />
+                                    <label for="female">여성</label>
+                                </div>
+                            </inputField>
+                            
+                            <inputField>
+                                <label for="inputWeight">몸무게</label>
+                                <flex-x>
+                                    <input type="number" value="65" id="inputWeight"/>
+                                    <div>kg</div>
+                                </flex-x>
+                            </inputField>
+
+                        </flex-x>
+                    </flex-y>
+                </flex-y>
+
+                <flex-y class="section">
+
+                    <div>음주 정보</div>
+
+                    <flex-x>
+
+                        <flex-x>
+                            <inputField>
+                                <label for="inputML">한 병의 용량</label>
+                                <flex-x>
+                                    <input type="number" value="360" id="inputML"/>
+                                    <div>ml</div>
+                                </flex-x>
+                            </inputField>
+                        </flex-x>
+
+                        <inputField>
+                            <label for="inputAlchol">도수</label>
+                            <flex-x>
+                                <input type="number" value="12" id="inputAlchol"/>
+                                <div>도</div>
+                            </flex-x>
+                        </inputField>
+
+                        <inputField>
+                            <label for="inputDrink">마실 병 수</label>
+                            <flex-x>
+                                <input type="number" value="1" id="inputDrink"/>
+                                <div>병</div>
+                            </flex-x>
+                        </inputField>
+
+                        <inputField>
+                            <label for="inputAfterHour">음주 후 경과 시간</label>
+                            <flex-x>
+                                <input type="number" value="0" id="inputAfterHour"/>
+                                <div>시간</div>
+                            </flex-x>
+                        </inputField>
+
+                    </flex-x>
+
+                    <flex-x>
+                        <inputField>
+                            <label for="inputCost">한 병의 가격</label>
+                            <flex-x>
+                                <input type="number" value="1200" id="inputCost"/>
+                                <div>원</div>
+                            </flex-x>
+                        </inputField>
+                    </flex-x>
+                </flex-y>
+            </div>
+        </section>
+
+        <script src="js/util.js"></script>
+        <script src="js/var.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/event.js"></script>
+    </body>
+</html>
